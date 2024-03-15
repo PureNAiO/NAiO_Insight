@@ -11,7 +11,7 @@ class ZabbixData(BaseModel):
     datas: dict
 
 
-@app.post("api/datas")
+@app.post("/api/datas")
 async def zabbix_recv(data: ZabbixData):
     device_name = data['device_name']
     metrics = data['datas']
