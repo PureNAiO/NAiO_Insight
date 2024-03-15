@@ -22,7 +22,7 @@ class MySQL:
 
 class Influx:
     def __init__(self):
-        self.host = f"http://{os.environ.get('INFLUX_HOST')}:8086"
+        self.host = f"http://{os.environ.get('expor')}:3033"
         self.org = os.environ.get('INFLUX_ORG')
         self.bucket = os.environ.get('INFLUX_BUCKET')
         self.token = os.environ.get('INFLUX_TOKEN')
